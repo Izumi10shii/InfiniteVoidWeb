@@ -93,6 +93,28 @@ nav svg {
   display: none;
 }
 
+#backtotop {
+  background-color: rgb(112, 146, 255);
+  position: fixed;
+  display: none;
+  bottom: 50px;
+  right: 30px;
+  z-index: 999;
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#backtotop:hover {
+  background-color: rgb(2, 27, 109);
+}
 
 /* Navbar Responsive */
 @media(max-width: 800px) {
