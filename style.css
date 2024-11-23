@@ -35,7 +35,7 @@ html {
 
 nav {
   height: 80px;
-  background-image: linear-gradient(90deg, #103CE7, #00d9ff);
+  background-image: linear-gradient(90deg, #1676F9, #033FAD);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -53,7 +53,7 @@ nav {
   align-items: center;
 
   transition: 0.75s ease-in-out;
-  padding: 0 20px;
+
 }
 
 nav a {
@@ -73,8 +73,8 @@ nav a {
 }
 
 nav a:hover {
-  color: greenyellow;
-  border-bottom: 5px solid greenyellow; 
+  background-color: #afafaf49;
+  transition: 0.2 ease-in-out;
 }
 
 nav .home-link {
@@ -93,27 +93,36 @@ nav svg {
   display: none;
 }
 
-#backtotop {
-  background-color: rgb(112, 146, 255);
+
+#backtotop{
+  background-color: #1676F9;
   position: fixed;
   display: none;
-  bottom: 50px;
+  bottom: 30px;
   right: 30px;
   z-index: 999;
   font-size: 20px;
   color: white;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 0px;
   border: none;
   width: 60px;
   height: 60px;
   align-items: center;
   justify-content: center;
   align-content: center;
+
+  transition: .3s ease-in-out;
 }
 
 #backtotop:hover {
-  background-color: rgb(2, 27, 109);
+  background-color: #0D4693;
+  transform: scale(1.1);
+  border-radius: 100px
+}
+
+#backtotop:active{
+  background-color: #1676F9;
 }
 
 /* Navbar Responsive */
@@ -133,7 +142,7 @@ nav svg {
     z-index: 10;
     width: 300px;
 
-    background-image: linear-gradient(180deg, #103CE7, #00d9ff);
+    background-image: linear-gradient(180deg, #1676F9, #033FAD);
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
     transition: 0.75s ease-in-out;
   }
@@ -252,7 +261,6 @@ section {
 @media (max-width: 1040px) {
 
   header {
-
     padding: 12px 20px;
   }
 
@@ -493,15 +501,13 @@ section {
 .box {
   box-shadow: 0 0 2px gray;
 
-  background-color: transparent;
-  background-image: linear-gradient( 120deg,
-  rgb(16, 60, 231,0.5), rgb(0, 217, 255,0.5));
+  background-color: #1676F9;
   backdrop-filter: blur(20px);
   
 
 
   padding: 40px;
-  border-radius: 30px;
+  border-radius: 0px;
   max-width: 500px;
   max-height: 300px;
   height: 300px;
@@ -520,22 +526,22 @@ section {
 .box>h3 {
   font-weight: bold;
   font-size: 2rem;
-  color: black;
+  color: white;
 }
 
 .box>h2 {
   font-size: 1.5rem;
-  color: green;
+  color: white;
 }
 .box > p{
-  color: black;
+  color: white;
   text-align: justify;
 }
 
 .box:hover {
   transform: scale(1.2);  
   background-image: linear-gradient( 120deg,
-  rgb(16, 60, 231,0.5), rgba(255, 0, 200, 0.5));
+  #1676F9, #8c00ff);
   border: 3px solid white;
   z-index:2
 }
@@ -553,10 +559,105 @@ section {
 /* ResearchCategory */
 .ResearchCategory {
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
   justify-content: center;
   min-height: 100vh;
   width: 100%;
+
+
+  /* TempColor */
+  background-color: aquamarine;
+}
+
+.research {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0;
+  background-color: #8eb1c7;
+}  
+.extension {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0;
+  background-color: #7fb2a9;
+}
+
+.blog-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 85%;
+  margin: 20px auto;
+  padding-top: 5px;
+
+}
+
+
+.blog-section .title {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 25px auto;
+}
+
+.card {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+.cards .card {
+  width: 100%;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-content {
+  padding: 15px 20px;
+}
+
+.contact-content h4 {
+  font-family: 'Futura';
+  font-size: 24px;
+  color: #087762;
+  font-weight: 500;
+}
+
+.contact-content p {
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Futura';
+  font-weight: 500;
+}
+
+.card .posted-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #ebe8df;
+  padding: 6px 15px;
+}
+
+.posted-date p {
+  font-family: 'Futura';
 }
 
 /* ResearchCategory End */
@@ -565,10 +666,75 @@ section {
 /* ExtensionCategory */
 .ExtensionCategory {
   display: flex;
-  position: relative;
-  justify-content: center;
   min-height: 100vh;
+
+    /* TempColor */
+    background-color: aliceblue;
+}
+
+.card {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+.cards .card {
   width: 100%;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 15px 20px;
+}
+
+.content h4 {
+  font-family: 'Futura';
+  font-size: 24px;
+  color: #087762;
+  font-weight: 500;
+}
+
+.content p {
+  
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Futura';
+  font-weight: 500;
+}
+
+.card .posted-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #ebe8df;
+  padding: 6px 15px;
+}
+
+.posted-date p {
+  font-family: 'Futura';
+}
+
+.exheader {
+  display: flex;
+  justify-content: center;
+
+}
+
+.exheadersub {
+  display: flex;
+  justify-content: center;
 }
 
 /* ExtensionCategory End */
@@ -577,10 +743,55 @@ section {
 /* CollaboratingOrganizations */
 .CollaboratingOrganizations {
   display: flex;
-  position: relative;
-  justify-content: center;
   min-height: 100vh;
   width: 100%;
+  flex-direction: column;
+  /* TempColor */
+  background-color: antiquewhite;
+}
+
+.collabheader {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.CollabOrg {
+  font-size: 50px;
+}
+
+.collabicons {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.collab {
+  width: 100%; 
+  max-width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+
+}
+
+.collab img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position: center;
+  display: block;
+
+}
+
+.collab:hover {
+  box-shadow: 0px 0px 20px rgb(93, 103, 240);
 }
 
 /* CollaboratingOrganizations End */
@@ -589,31 +800,80 @@ section {
 /* E-Poster */
 .E-Poster {
   display: flex;
-  position: relative;
-  justify-content: center;
   min-height: 100vh;
   width: 100%;
+
+  /* TempColor */
+  background-color: lightpink;
+}
+
+.posterheader {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.EPoster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: 'Futura';
+  text-align: center;
+}
+
+.EPosterSub {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-family: 'Futura';
+  align-items: center;
+  text-align: center;
+}
+
+.eposterguide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Futura';
+  font-size: 20px;
+}
+
+.eposter-content li {
+  font-family: 'Futura';
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
 }
 
 /* E-Poster End */
 
 /* Footer */
 footer {
+  color: white;
   position: relative;
   width: 100%;
-  background-image: linear-gradient(90deg, #00d9ff, #103CE7);
+  background-image: linear-gradient(90deg, #1676F9, #0D4693);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   
 }
+ul li{
+  
+  font-size: 20px;
+  list-style: none;
+  padding: 15px;
+}
 
 footer p {
   font-family: 'Futura';
   color: white;
   margin-bottom: 30px;
-  font-size: 35px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -626,11 +886,6 @@ footer ul{
     text-wrap: wrap;
     
 }
-ul li{
-  
-  font-size: 20px;
-  list-style: none;
-  padding: 15px;
-}
+
 
 /* Footer End */
