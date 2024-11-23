@@ -16,5 +16,10 @@ Footer: 20%
 Responsiveness: 10% 
 
 Note to members:
-Tapusin na yung HTML pati layout
+Tapusin na yung HTML pati layout,
+
 Rodsef paalign nung header ng E-Poster, thanks
+
+
+Lahat ng text gawin niyong Futura
+font-family: 'Futura';
