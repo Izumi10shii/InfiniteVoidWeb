@@ -14,3 +14,7 @@ E-Poster: 10%
 Footer: 20%
 
 Responsiveness: 10% 
+
+Note to members:
+Tapusin na yung HTML pati layout
+Rodsef paalign nung header ng E-Poster, thanks
