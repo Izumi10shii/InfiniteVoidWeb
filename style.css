@@ -667,11 +667,44 @@ section {
 .ExtensionCategory {
   display: flex;
   min-height: 100vh;
+justify-content: center;
+flex-direction: column;
+
+
 
     /* TempColor */
     background-color: aliceblue;
 }
+.extensionheader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 
+
+}
+.Extension-Content > li{
+  list-style-type: none;
+}
+.Sub-Title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.Extension-Group{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+ul li{
+  list-style-type: none;
+}
+
+
+
+
+
+
+/*
 .card {
   width: calc(50% - 20px);
   margin-bottom: 20px;
@@ -736,6 +769,7 @@ section {
   display: flex;
   justify-content: center;
 }
+*/
 
 /* ExtensionCategory End */
 
@@ -834,6 +868,7 @@ section {
 .eposterguide{
   display: flex;
   justify-content: center;
+
   align-items: center;
   text-align: center;
   font-family: 'Futura';
