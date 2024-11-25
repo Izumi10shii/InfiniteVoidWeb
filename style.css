@@ -34,6 +34,12 @@ html {
   font-family: 'Futura';
 }
 
+header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 nav {
   height: 80px;
   background-image: linear-gradient(90deg, #1676F9, #033FAD);
@@ -65,21 +71,26 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
-  transition: .3s ease-in-out;
+  transition: .2s ease-in-out;
 }
 .home-link{
   font-weight: bold;
   font-size: 1.5rem;
 }
+.home-link:hover{
+  transform: scale(1);
+  background: none;
+  box-shadow: 0 0 0px solid black;
+}
 
 nav a:hover {
-  box-shadow: 0 0 2px solid black;
+
   background: #00308a;
   
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 nav a:active{
-  transform: scale(1);
+  transform: scale(.9);
 }
 
 nav .home-link {
@@ -100,48 +111,64 @@ nav svg {
 
 
 #backtotop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
   background-color: #1676F9;
   position: fixed;
-  display: none;
+
   bottom: 30px;
   right: 30px;
+
   z-index: 999;
-  font-size: 20px;
-  color: white;
-  padding: 15px;
-  border-radius: 100px;
-  border: none;
-  width: 60px;
   height: 60px;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
+  width:60px;
+
+  color: white; 
+  border-radius: 100px;
+  border: 3px solid white;
 
   transition: .2s ease-in-out;
+}
+#backtotop svg{
+
+  font-size: 1.2rem;
+  color: white;
 }
 
 #backtotop:hover{
   background-color: #033FAD;
-  transform: scale(1.1);
-  border-radius: 100px
+  transform: translateY(-5px);
 }
 
 #backtotop:active{
   background-color: #1676F9;
-  transform: scale(1);
+  transform: scale(.9);
 
 }
 
 /* Navbar Responsive */
-@media(max-width: 800px) {
+@media screen and (max-width: 800px) {
+  
   * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
   }
+  nav{
+    display: flex;
+    justify-content: end;
+  }
+
+
+
   .links-container {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    
 
     position: fixed;
     top: 0;
@@ -153,15 +180,13 @@ nav svg {
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
     transition: 0.75s ease-in-out;
   }
-  nav a {
-   
-    height: auto;
+
+  nav a{
     width: 100%;
-    padding: 20px 0px;
-    justify-content: flex-start;
   }
   nav a:hover{
     border: none;
+    
   }
 
 
@@ -187,6 +212,13 @@ nav svg {
     z-index: 9;
   }
   
+  .box-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .box{
+    margin:20px;
+  }
 }
 
 /* Home Section */
@@ -196,6 +228,13 @@ nav svg {
   justify-content: center;
   min-height: 100vh;
   width: 100%;
+  background-image: url(img/ursbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.Overlay {
+  border-image: fill 1 linear-gradient(hsla(0, 2%, 11%, 0.521), hsla(0, 2%, 11%, 0.521)) ;
 }
 
 section {
@@ -334,6 +373,8 @@ section {
     transition: 0.3s ease;
   }
 
+  
+
 }
 
 /* Home Section End */
@@ -415,8 +456,14 @@ section {
 }
 
 
+
 /* About - Responsiveness*/
 @media screen and (max-width: 800px) {
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   .about-heading h1 {
     font-size: 45px;
     margin-top: 30px;
@@ -520,12 +567,12 @@ section {
   max-height: 300px;
   height: 300px;
 
-  transition: .2s ease-in-out;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  transition: .3s ease-in-out;
 }
 .box *{
   margin: 10px;
@@ -551,7 +598,7 @@ section {
   background-image: linear-gradient( 120deg,
   #1676F9, #8c00ff);
   border: 3px solid white;
-  z-index:2
+  z-index:2;
 }
 
 .box:active {
@@ -572,11 +619,27 @@ section {
   min-height: 100vh;
   width: 100%;
 
-
   /* TempColor */
   background-color: aquamarine;
 }
 
+.rctitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.rc-row {
+  display: flex;
+}
+
+.rc-column::before {
+  flex: 50%;
+}
+
+/*
 .research {
   width: 100%;
   min-height: 100vh;
@@ -607,6 +670,8 @@ section {
   margin: auto;
   font-size: 30px;
 }
+
+
 
 .cards {
   display: grid;
@@ -666,6 +731,14 @@ section {
 
 .posted-date p {
   font-family: 'Futura';
+}
+*/
+
+/* ResearchCategory - Responsiveness */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
 }
 
 /* ResearchCategory End */
@@ -840,6 +913,7 @@ ul li{
   margin: 10px;
   position: relative;
 
+  transition: .2s ease-in-out;
 }
 
 .collab img {
@@ -852,7 +926,8 @@ ul li{
 }
 
 .collab:hover {
-  box-shadow: 0px 0px 20px rgb(93, 103, 240);
+  box-shadow: 0px 0px 2px rgb(0, 0, 0);
+  transform: scale(1.1);
 }
 
 /* CollaboratingOrganizations End */
@@ -900,7 +975,7 @@ ul li{
 .eposter-content li ul li{
   list-style-type: disc;
   font-size: 1rem;
-  line-height: 1%; /*space ng bullets sa Layout*/
+ 
 }
 
 
@@ -911,37 +986,59 @@ footer {
   color: white;
   position: relative;
   width: 100%;
-  background-image: linear-gradient(90deg, #1676F9, #0D4693);
+  background-image: linear-gradient(90deg, #225cad, #051a36);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.social-links{
+  justify-content: center;
+  align-items: center;  
+}
+.social-links a{
+  background-color: red;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+}
+.social-links svg{
   
 }
-ul li{
-  
-  font-size: 20px;
-  list-style: none;
-  padding: 15px;
+
+.footerdetails {
+  gap: 50px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+footer a {
+  padding-top: 20px;
+  text-decoration: none;
+  padding: 20px 25px;
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+footer a:hover {
+  color: #225cad;
+  font-weight: bold;
 }
 
 footer p {
-  font-family: 'Futura';
-  color: white;
-  margin-bottom: 30px;
-  font-size: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  font-size: 20px;
 }
 
-footer ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    text-wrap: wrap;
-    
-}
+
 
 
 /* Footer End */
