@@ -32,6 +32,7 @@ body {
 html {
   scroll-behavior: smooth;
   font-family: 'Futura';
+  overflow-x: hidden;
 }
 
 header{
@@ -50,6 +51,11 @@ nav {
   z-index: 999;
   width: 100%;
 
+}
+
+.links-container img {
+  size: 30px;
+  width: 100px;
 }
 
 .links-container {
@@ -622,6 +628,10 @@ section {
   /* TempColor */
   background-color: aquamarine;
 }
+.Research{
+  color: purple;
+  font-size: 3.5em;
+}
 
 .rctitle {
   display: flex;
@@ -629,110 +639,25 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .rc-row {
   display: flex;
+  gap: 100px;
 }
 
 .rc-column::before {
   flex: 50%;
 }
 
-/*
-.research {
-  width: 100%;
-  min-height: 100vh;
-  padding: 40px 0;
-  background-color: #8eb1c7;
-}  
-.extension {
-  width: 100%;
-  min-height: 100vh;
-  padding: 40px 0;
-  background-color: #7fb2a9;
+.thematic {
+  padding-bottom: 30px;
 }
 
-.blog-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 85%;
-  margin: 20px auto;
-  padding-top: 5px;
-
+.abstractformat {
+  padding-bottom: 30px;
 }
-
-
-.blog-section .title {
-  width: 60%;
-  text-align: center;
-  margin: auto;
-  font-size: 30px;
-}
-
-
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  margin: 25px auto;
-}
-
-.card {
-  width: calc(50% - 20px);
-  margin-bottom: 20px;
-}
-
-.cards .card {
-  width: 100%;
-  position: relative;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: white;
-}
-
-.image-section img {
-  width: 100%;
-  height: auto;
-}
-
-.contact-content {
-  padding: 15px 20px;
-}
-
-.contact-content h4 {
-  font-family: 'Futura';
-  font-size: 24px;
-  color: #087762;
-  font-weight: 500;
-}
-
-.contact-content p {
-  text-align: justify;
-  font-size: 20px;
-  font-family: 'Futura';
-  font-weight: 500;
-}
-
-.card .posted-date {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  background-color: #ebe8df;
-  padding: 6px 15px;
-}
-
-.posted-date p {
-  font-family: 'Futura';
-}
-*/
 
 /* ResearchCategory - Responsiveness */
 @media screen and (max-width: 800px) {
@@ -756,29 +681,41 @@ flex-direction: column;
     /* TempColor */
     background-color: aliceblue;
 }
+
+.Extension{
+  color: rgb(45, 0, 128);
+  font-size: 3.5em;
+}
+
+
 .extensionheader{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  padding-bottom: 100px;
+}
+
+.ec-row {
+  display: flex;
+  gap: 100px;
+  padding-bottom: 100px;
+}
+
+.ec-column::before {
+  flex: 50%;
+}
+
+.formatresearch {
+  padding-top: 20px;
+}
+
+.paperformat {
+  padding-top: 20px;
+}
 
 
-}
-.Extension-Content > li{
-  list-style-type: none;
-}
-.Sub-Title{
-  font-size: 2rem;
-  font-weight: bold;
-}
-.Extension-Group{
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-ul li{
-  list-style-type: none;
-}
 .Abstract-Submission-Bar{
   display: flex;
   justify-content: center;
@@ -790,86 +727,23 @@ ul li{
   font-weight: bold;
   width: 100%;
   margin: 20px 0px;
+  
 }
+
 .QR-CODE{
   background-image: url(img/QRCODE.png);
-  height: 600px;
-  width: 600px;
+  height: 300px;
+  width: 300px;
   background-size: contain;
-
-
   margin: auto;
 }
 
-
-
-
-/*
-.card {
-  width: calc(50% - 20px);
-  margin-bottom: 20px;
+/* ExtensionCategory - Responsiveness */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
 }
-
-.cards .card {
-  width: 100%;
-  position: relative;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: white;
-}
-
-.image-section img {
-  width: 100%;
-  height: auto;
-}
-
-.content {
-  padding: 15px 20px;
-}
-
-.content h4 {
-  font-family: 'Futura';
-  font-size: 24px;
-  color: #087762;
-  font-weight: 500;
-}
-
-.content p {
-  
-  text-align: justify;
-  font-size: 20px;
-  font-family: 'Futura';
-  font-weight: 500;
-}
-
-.card .posted-date {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  background-color: #ebe8df;
-  padding: 6px 15px;
-}
-
-.posted-date p {
-  font-family: 'Futura';
-}
-
-.exheader {
-  display: flex;
-  justify-content: center;
-
-}
-
-.exheadersub {
-  display: flex;
-  justify-content: center;
-}
-*/
 
 /* ExtensionCategory End */
 
@@ -951,6 +825,7 @@ ul li{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 }
 /*
 .EPoster {
@@ -994,17 +869,18 @@ footer {
 }
 
 .social-links{
+  display: f;
   justify-content: center;
   align-items: center;  
 }
 .social-links a{
-  background-color: red;
-  border-radius: 100px;
-  width: 40px;
-  height: 40px;
+  background-color: blue;
+  border-radius: 1000px;
+  width: 610px;
+  height: 60px;
 }
 .social-links svg{
-  
+  max-width: 40px;
 }
 
 .footerdetails {
