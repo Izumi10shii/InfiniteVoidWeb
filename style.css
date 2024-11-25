@@ -79,9 +79,13 @@ nav a {
   font-size: 1.1rem;
   transition: .2s ease-in-out;
 }
+
+
+
 .home-link{
   font-weight: bold;
   font-size: 1.5rem;
+
 }
 .home-link:hover{
   transform: scale(1);
@@ -869,24 +873,18 @@ footer {
 }
 
 .social-links{
-  display: f;
+  display: flex;
   justify-content: center;
   align-items: center;  
 }
-.social-links a{
-  background-color: blue;
-  border-radius: 1000px;
-  width: 610px;
-  height: 60px;
-}
-.social-links svg{
-  max-width: 40px;
+.social-links i{
+  font-size: 1.5rem;
 }
 
 .footerdetails {
   gap: 50px;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 footer a {
