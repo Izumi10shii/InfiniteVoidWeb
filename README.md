@@ -1,25 +1,11 @@
 # InfiniteVoidWeb
 GroupProj
 
-Completion Progress:
+Completion Progress: Around 50%-65%
 
-Navbar: 90%
-Home: 50%
-About: 80%
-ConferenceFee: 90%
-ResearchCategory: 20%
-ExtensionCategory: 0%
-CollaboratingOrganizations: 80%
-E-Poster: 10%
-Footer: 20%
+Responsiveness: 12% 
 
-Responsiveness: 10% 
-
-Note to members:
-Tapusin na yung HTML pati layout,
-
-Rodsef paalign nung header ng E-Poster, thanks
-
-
-Lahat ng text gawin niyong Futura
-font-family: 'Futura';
+NOTE TO MEMBERS:
+- Suggest kayo ng pwede pa nating baguhin sa itsura nung website since medyo plain pa rin siya as of now
+- Research sa possible layout ng responsive part ng website
+- More images para sa homescreen
