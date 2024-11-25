@@ -47,26 +47,25 @@ nav {
 }
 
 .links-container {
+  margin: 0 20px;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  transition: 0.75s ease-in-out;
-
+ 
+  gap: 10px;
 }
 
 nav a {
-  height: 100%;
-  padding: 0 20px;
+  padding: 25px 20px;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
-
-  transition: 0.2 ease-in-out;
+  transition: .3s ease-in-out;
 }
 .home-link{
   font-weight: bold;
@@ -74,8 +73,13 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #afafaf49;
-  transition: 0.2 ease-in-out;
+  box-shadow: 0 0 2px solid black;
+  background: #00308a;
+  
+  transform: scale(1.1);
+}
+nav a:active{
+  transform: scale(1);
 }
 
 nav .home-link {
@@ -105,7 +109,7 @@ nav svg {
   font-size: 20px;
   color: white;
   padding: 15px;
-  border-radius: 0px;
+  border-radius: 100px;
   border: none;
   width: 60px;
   height: 60px;
@@ -113,17 +117,19 @@ nav svg {
   justify-content: center;
   align-content: center;
 
-  transition: .3s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
-#backtotop:hover {
-  background-color: #0D4693;
+#backtotop:hover{
+  background-color: #033FAD;
   transform: scale(1.1);
   border-radius: 100px
 }
 
 #backtotop:active{
   background-color: #1676F9;
+  transform: scale(1);
+
 }
 
 /* Navbar Responsive */
@@ -157,6 +163,7 @@ nav svg {
   nav a:hover{
     border: none;
   }
+
 
   .open-sidebar-button {
     position: sticky;
@@ -540,7 +547,7 @@ section {
 }
 
 .box:hover {
-  transform: scale(1.2);  
+  transform: scale(1.2);
   background-image: linear-gradient( 120deg,
   #1676F9, #8c00ff);
   border: 3px solid white;
