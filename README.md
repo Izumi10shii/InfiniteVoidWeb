@@ -2,13 +2,13 @@
 IMREACH Website Developed by Project Team InfiniteVoid <br>
 Group Members: <br>
 Project Leader: Paras, Christian David
-- Project Members: 
-                - Mariano, Sean Dylan
-                - Ramirez, Rodsef
-                - Saguinsin, Ryan
-                - Sales, Harvey
+- Project Members: <br>
+                - Mariano, Sean Dylan <br>
+                - Ramirez, Rodsef <br>
+                - Saguinsin, Ryan <br>
+                - Sales, Harvey <br>
 
-Completion Progress: 95%
-To-do List:
-> Members Popup
+Completion Progress: 95% <br>
+To-do List: <br>
+> Members Popup <br>
 > Responsiveness Fix
