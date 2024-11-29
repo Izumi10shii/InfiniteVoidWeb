@@ -1,12 +1,14 @@
 # InfiniteVoidWeb
-GroupProj
+IMREACH Website Developed by Project Team InfiniteVoid
+Group Members:
+Project Leader: Paras, Christian David
+Project Members: 
+                Mariano, Sean Dylan
+                Ramirez, Rodsef
+                Saguinsin, Ryan
+                Sales, Harvey
 
-Completion Progress: Around 80%
-
-Responsiveness: 70% 
-
-NOTE TO MEMBERS:
-- Suggest kayo ng pwede pa nating baguhin sa itsura nung website since medyo plain pa rin siya as of now
-- More images para sa homescreen
-
-- Patanggal ng hover effect sa LOGO sa navbar
+Completion Progress: 95%
+To-do List:
+> Members Popup
+> Responsiveness Fix
