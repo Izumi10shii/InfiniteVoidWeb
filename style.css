@@ -29,6 +29,7 @@ html {
     font-family: 'Futura';
 }
 
+
 #About-Section,
 #URSVision-Section,
 #Conference-Fees-Section,
@@ -86,60 +87,55 @@ footer {
 }
 
 #URSVision-Section {
-    background-color: #e5e5f7;
-    background-size: 80px 140px;
-    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-image: linear-gradient(#89c2d9 1px, transparent 1px), linear-gradient(to right, #89c2d9 1px, transparent 1px);
+    background-size: 69px 69px;
+    background-color: #a9d6e5;
 }
 
 #About-Section {
     background-color: #e5e5f7;
     opacity: 1;
-    background-image: linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77), linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77);
-    background-size: 80px 140px;
-    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-image: radial-gradient(#a9d6e5 2px, #e5e5f7 2px);
+    background-size: 40px 40px;
 }
 
 #Conference-Fees-Section {
-    background-color: #e5e5f7;
-    opacity: 1;
-    background-image: radial-gradient(#1676f9 2px, transparent 2px), radial-gradient(#1676f9 2px, #e5e5f7 2px);
-    background-size: 80px 80px;
-    background-position: 0 0, 40px 40px;
+    background: 
+    radial-gradient(calc(1.28*56px + 21px/2) at left 50% bottom calc(-.8*56px),#89c2d9 calc(100% - 21px),#a9d6e5 calc(101% - 21px) 100%,#0000 101%) calc(2*56px) calc(-1*calc(1.5*56px + 21px)),
+    radial-gradient(calc(1.28*56px + 21px/2) at left 50% bottom calc(-.8*56px),#61a5c2 calc(100% - 21px),#a9d6e5 calc(101% - 21px) 100%,#0000 101%) calc(-1*56px) calc(calc(1.5*56px + 21px)/-2),
+    radial-gradient(calc(1.28*56px + 21px/2) at left 50% top    calc(-.8*56px),#61a5c2 calc(100% - 21px),#a9d6e5 calc(101% - 21px) 100%,#0000 101%) 0 calc(1.5*56px + 21px),
+    radial-gradient(calc(1.28*56px + 21px/2) at left 50% top    calc(-.8*56px),#89c2d9 calc(100% - 21px),#a9d6e5 calc(101% - 21px) 100%,#0000 101%) 56px calc(calc(1.5*56px + 21px)/ 2),
+    linear-gradient(#89c2d9 50%,#61a5c2 0);
+    background-size: calc(4*56px) calc(1.5*56px + 21px);
 
 }
 
 #Research-Category-Section {
-    background-color: #e5e5f7;
-    opacity: 1;
-    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#444cf7 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #444cf7 0.8px, #e5e5f7 0.8px) -0.4px 0;
-    background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 33px, #61a5c2 33px, #61a5c2 66px);
+    background-color: #468faf;
 }
 
 #Extension-Category-Section {
-    background-color: #e5e5f7;
-    opacity: 1;
-    background-size: 80px 80px;
-    background-image: repeating-linear-gradient(0deg, #1676f9, #1676F9 2px, #e5e5f7 2px, #e5e5f7);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 33px, #2a6f97 33px, #2a6f97 66px);
+    background-color: #2c7da0;
 }
 
 #E-Poster-Section {
-    background-color: #e5e5f7;
-    opacity: 1;
-    background-image:  linear-gradient(135deg, #abcdfc 25%, transparent 25%), linear-gradient(225deg, #abcdfc 25%, transparent 25%), linear-gradient(45deg, #abcdfc 25%, transparent 25%), linear-gradient(315deg, #abcdfc 25%, #e5e5f7 25%);
-    background-position:  40px 0, 40px 0, 0 0, 0 0;
-    background-size: 80px 80px;
-    background-repeat: repeat;
+    background:
+    radial-gradient(27% 29% at right, #0000 83%,#013a63 85% 99%,#0000 101%) calc(33px/2) 33px,
+    radial-gradient(27% 29% at left, #0000 83%,#013a63 85% 99%,#0000 101%) calc(33px/-2) 33px,
+    radial-gradient(29% 27% at top, #0000 83%,#013a63 85% 99%,#0000 101%) 0 calc(33px/2),
+    radial-gradient(29% 27% at bottom, #0000 83%,#013a63 85% 99%,#0000 101%) 0 calc(33px/-2)
+    #012a4a;
+    background-size: 66px 66px;
 
 }
 
 #Collaborating-Organizations-Section {
-   
-
-
+    background: linear-gradient(135deg, #014f86 25%, transparent 25%) -33px 0/ 66px 66px, linear-gradient(225deg, rgba(1,79,134,0.5) 25%, transparent 25%) -33px 0/ 66px 66px, linear-gradient(315deg, #014f86 25%, transparent 25%) 0 0/ 66px 66px, linear-gradient(45deg, rgba(1,79,134,0.5) 25%, #01497c 25%) 0 0/ 66px 66px;
+    background-color: #01497c;
+    
 }
-
-
-
 
 footer {
     background-color: #033fad;
@@ -160,7 +156,7 @@ footer {
 p,
 li {
     font-size: 1.2rem;
-    
+
 }
 
 h2 {
@@ -189,6 +185,17 @@ h3 {
 }
 
 .content-mission {
+    text-align: center;
+    font: 3rem;
+}
+
+.core-values {
+    text-align: center;
+    font: 3rem;
+    text-transform: uppercase;
+}
+
+.corevalues-content {
     text-align: center;
     font: 3rem;
 }
@@ -226,6 +233,7 @@ nav .links-container {
     padding: 0px 40px;
 
     background: #1676F9;
+    border-bottom:solid 1px white;
     /*
     backdrop-filter: blur(20px);
     background-image: linear-gradient(120deg,
@@ -363,19 +371,21 @@ nav a:hover {
 /*Vision & Mission*/
 
 #URSVision-Section {
-    background-image: url(svgbg/wavesOpacity.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-
-#URSVision-Section .content-mission {
-    text-align: center;
+    color: white;
 }
 
 .title-mission {
     padding-top: 50px;
+}
+
+.core-values {
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.urssection {
+    border-color: solid 2px black;
+    margin: 16px;
 }
 
 /*About*/
@@ -457,13 +467,17 @@ nav a:hover {
     transform: scale(1);
 }
 
+#Conference-Fees-Section .section-title {
+    color: white;
+}
+
 /*Research Category*/
 #Research-Category-Section .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-
+    color: white;
 }
 
 .titles-div,
@@ -517,6 +531,7 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .titles-div {
@@ -525,6 +540,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 #Extension-Category-Section .content {
@@ -587,6 +603,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
+    color: white;
 }
 
 #Collaborating-Organizations-Section .section-title,
@@ -596,6 +613,9 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     display: grid;
+}
+
+#Collaborating-Organizations-Section .section-title {
 }
 
 .icons-container {
@@ -670,7 +690,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    color: white;
     text-align: justify;
 
 }
@@ -712,7 +732,7 @@ footer li {
 
 .footer-social-links {
     display: flex;
-    gap: 60px;
+    gap: 50px;
 
 }
 
@@ -795,6 +815,7 @@ footer li {
         padding-left: 100%;
 
         background-color: #1676F9;
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
     }
 
 
@@ -830,6 +851,7 @@ footer li {
         width: 100%;
         height: 100vh;
         background-color: #1676F9;
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
     }
 
     nav .links-container a:nth-child(2) {
@@ -936,6 +958,16 @@ footer li {
     footer .footer-copyright li:nth-child(4) {
         display: none;
     }
+
+
+    .homepagecontent img {
+        width: 300px;
+    }
+
+    .bgvid {
+        height: 100%;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -958,10 +990,29 @@ footer li {
         min-width: 100%;
 
     }
+
+
+    .homepagecontent img {
+        width: 300px;
+    }
+
+    .bgvid {
+        height: 100%;
+    }
+
 }
 
 
 @media (max-width: 520px) {
+
+
+    .homepagecontent img {
+        width: 300px;
+    }
+
+    .bgvid {
+        height: 100%;
+    }
 
 
     #sidebar-active:checked~.links-container {
@@ -993,8 +1044,10 @@ footer li {
         width: 300px;
     }
 
-    .homepagecontent img {
-        width: 300px;
+    .bgvid {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
     }
 
 
