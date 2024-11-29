@@ -1,0 +1,1010 @@
+@font-face {
+    font-family: 'Futura';
+    src: url(fonts/Futura\ Book.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url(fonts/Futura\ Bold.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'FuturaBoldItalic';
+    src: url(fonts/Futura\ Bold\ Italic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura';
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 0px;
+}
+
+footer {
+    padding: 40px 0px;
+}
+
+section div,
+footer div {
+    border: 1px solid none;
+}
+
+section,
+footer {
+    width: 100vw;
+    background-color: gray;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.section-secondary-title {
+    font-size: 1.5rem;
+}
+
+.content .sub-title {
+    font-size: 2rem;
+}
+
+.section-title,
+.section-secondary-title,
+.sub-title {
+    text-transform: uppercase;
+}
+
+/*About sub-titles*/
+.sub-title:nth-child(2),
+.sub-title:nth-child(4) {
+    text-transform: none;
+}
+
+/*colors*/
+#Home-Section {
+    background-color: gray;
+}
+
+#About-Section {
+    background-color: white;
+}
+
+#Conference-Fees-Section {
+    background-color: aqua;
+}
+
+#Research-Category-Section {
+    background-color: aquamarine;
+}
+
+#Extension-Category-Section {
+    background-color: white;
+}
+
+#E-Poster-Section {
+    background-color: lightpink;
+}
+
+#Collaborating-Organizations-Section {
+    background-color: wheat;
+}
+
+footer {
+    background-color: #033fad;
+}
+
+
+/*font sizes*/
+.section-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/*Nav bar*/
+#sidebar-active,
+.open-sidebar,
+.close-sidebar {
+    display: none;
+}
+nav label{
+    z-index: 997;
+}
+#sidebar-active:checked ~ #overlay{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+nav .links-container {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 40px;
+
+    background: #1676F9;
+    /*
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(120deg,
+    rgb(22, 118, 249, 0.5),
+    rgb(3, 63, 173, 0.5));
+    */
+
+}
+
+nav .links-container a:nth-child(2) {
+    margin-right: auto;
+    font-weight: bold;
+    transform: scale(1.5);
+}
+
+nav .links-container a:nth-child(2):hover {
+    background-color: transparent;
+}
+
+nav .links-container a {
+    padding: 20px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+
+    transition: .5s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #033fad;
+}
+
+.up-button {
+    position: fixed;
+    z-index: 998;
+    right: 40px;
+    bottom: 30px;
+}
+
+.up-button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: none;
+    transition: .1s ease-in-out;
+
+    background-color: #1676F9;
+    color: white;
+}
+
+.up-button button div {
+    animation: updown 1s ease-in-out infinite;
+}
+
+.up-button button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.up-button button:active {
+    transform: translateY(-3px);
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/*Home*/
+#Home-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home-Section .img {
+    width: 90%;
+    height: 720px;
+
+    background-color: darkgray;
+}
+
+
+
+/*About*/
+#About-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#About-Section .content{
+    text-align: justify;
+}
+
+#About-Section .content,
+#About-Section .sub-title {
+    margin: 0px 5%;
+
+}
+
+#About-Section li {
+    list-style-type: decimal;
+}
+
+#About-Section div {
+    padding: 20px;
+}
+
+
+
+
+/*Conference Fees*/
+#Conference-Fees-Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    gap: 60px;
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    min-width: 500px;
+    min-height: 300px;
+    color: white;
+    background-color: #1676F9;
+
+    transition: .3s ease-in-out;
+    border-radius: 20px;
+}
+
+.card * {
+    text-align: justify;
+    padding: 10px 40px;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(180deg, #1676F9, #8c00ff);
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.card:active {
+    transform: scale(1);
+}
+
+/*Research Category*/
+#Research-Category-Section .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.titles-div,
+#Collaborating-Organizations-Section>.section-title {
+    display: grid;
+    grid-column: span 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Research-Category-Section .content {
+    display: grid;
+    align-items: start;
+    margin: 60px 100px;
+}
+
+#Research-Category-Section .content>div {
+    margin: 20px 60px;
+}
+
+#Research-Category-Section .content>div>div:nth-child(1) {
+    text-align: start;
+    margin: 20px 0px;
+}
+#Research-Category-Section .content div .group li:first-child,
+#Extension-Category-Section .content div .group li:first-child{
+    font-weight: bold;
+}
+
+#Research-Category-Section .content div .group li,
+#Extension-Category-Section .content div .group li,
+.Paper-Presentation-Format-List li{
+
+    list-style-type: none;
+}
+
+#Research-Category-Section p {
+    text-align: justify;
+}
+
+.content .Abstract-Format li {
+    list-style-type: decimal;
+}
+
+/*Extension Category*/
+#Extension-Category-Section .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.titles-div {
+    display: grid;
+    grid-column: span 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Extension-Category-Section .content {
+    display: grid;
+    align-items: start;
+    margin: 60px 100px;
+}
+
+#Extension-Category-Section .content>div {
+    margin: 20px 60px;
+}
+
+#Extension-Category-Section .content>div>div:nth-child(1) {
+    text-align: start;
+    margin: 20px 0px;
+}
+
+#Extension-Category-Section p {
+    text-align: justify;
+}
+
+#Extension-Category-Section div .Paper-Presentation-Format-List {
+    margin: 20px 0px;
+}
+
+.Abstract-Submission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+}
+
+.submission-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    background-color: blue;
+    text-transform: uppercase;
+}
+
+.qr-code {
+    background-image: url(img/ABSTRACT_QRCODE.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+}
+
+
+
+
+/*Collaborating Organization*/
+#Collaborating-Organizations-Section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#Collaborating-Organizations-Section .section-title,
+.icons-container {
+    grid-column: span 3;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.icons-container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.icons-container .icon {
+    min-width: 200px;
+    min-height: 200px;
+    margin: auto;
+    border-radius: 100px;
+    grid-column: span 2;
+}
+
+.icons-container .last-two-icons {
+    display: flex;
+    grid-column: span 6;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 40px;
+}
+
+.icon {
+    background-size: contain;
+    transition: .3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+}
+
+.icons-container>.icon:nth-child(1) {
+    background-image: url(img/PAASE.png);
+}
+
+.icons-container>.icon:nth-child(2) {
+    background-image: url(img/PEMEA.png);
+}
+
+.icons-container>.icon:nth-child(3) {
+    background-image: url(img/PhilEASNet.png);
+}
+
+.icons-container>.icon:nth-child(4) {
+    background-image: url(img/FEASMF.png);
+}
+
+.icons-container>.icon:nth-child(5) {
+    background-image: url(img/DOST.png);
+}
+
+.icons-container>.icon:nth-child(6) {
+    background-image: url(img/DEPED.png);
+}
+
+.last-two-icons>.icon:nth-child(1) {
+    background-image: url(img/FITS.png);
+}
+
+.last-two-icons>.icon:nth-child(2) {
+    background-image: url(img/CHED.png);
+}
+
+
+/*E-Poster*/
+#E-Poster-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: justify;
+
+}
+
+#E-Poster-Section .content {
+    margin: 20px 200px;
+}
+
+#E-Poster-Section .titles-div {
+    margin: 40px;
+}
+
+#E-Poster-Section .content>li {
+    list-style-type: decimal;
+}
+
+#E-Poster-Section .content>div {
+    margin: 0px 40px;
+}
+
+
+/*footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+footer > div {
+    display: flex;
+    margin: 5px 0px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+.footer-social-links {
+    display: flex;
+    gap: 60px;
+
+}
+
+.footer-social-links a {
+    width: 25px;
+    height: 25px;
+    transition: .5s ease-in-out;
+}
+
+.footer-nav li {
+    padding: 20px;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.footer-social-links a:hover {
+    transform: scale(1.5);
+}
+
+.footer-nav a li:hover,
+.footer-nav a:hover {
+    transform: translateY(-5px);
+    color: black;
+}
+
+
+.footer-copyright {
+    gap: 10px;
+    color: white;
+    justify-content: center;
+
+}
+
+
+.footer-copyright li {
+    font-size: 1.5rem;
+}
+
+#About-Section .content,
+#E-Poster-Section .content,
+.footer-copyright {
+    max-width: 90%;
+    min-width: 90%;
+}
+
+#Research-Category-Section .content,
+#Extension-Category-Section .content {
+    margin: 20px 10%;
+}
+
+ 
+
+/*Responsive*/
+@media (max-width: 1296px) {
+    .footer-nav li {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1184px) {
+
+    /*nav*/
+    .open-sidebar,
+    .close-sidebar {
+        display: flex;
+    }
+
+    nav .open-sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-left: auto;
+        padding: 20px;
+        padding-left: 100%;
+
+        background-color: #1676F9;
+    }
+
+
+    #sidebar-active {
+        display: none;
+    }
+
+    #sidebar-active:checked~.links-container {
+        left: 75%;
+    }
+
+    /*X*/
+    .links-container .close-sidebar {
+        margin-right: auto;
+        padding: 20px 20px;
+    }
+
+    nav .links-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        transition: .5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        left: 100%;
+
+        width: 100%;
+        height: 100vh;
+        background-color: #1676F9;
+    }
+
+    nav .links-container a:nth-child(2) {
+        width: 0%;
+    }
+
+    nav .links-container a {
+        width: 100%;
+
+    }
+
+    .card-container {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    section div {
+        grid-column: span 2;
+    }
+
+    #Research-Category-Section .content>div,
+    #Extension-Category-Section .content>div {
+        margin: 0px;
+    }
+
+    .last-two-icons {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:1076px) {
+    .footer-nav li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1153px) {
+    .footer-nav li {
+
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1012px) {
+    .footer-nav {
+        display: none;
+    }
+
+    #sidebar-active:checked~.links-container {
+        left: 70%;
+    }
+
+}
+
+@media (max-width: 920px) {
+
+    .qr-code {
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    #sidebar-active:checked~.links-container {
+        left: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    #sidebar-active:checked~.links-container {
+        left: 60%;
+    }
+}
+
+@media (max-width: 701px) {
+    .qr-code {
+        max-width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .footer-copyright li {
+        font-size: 1.2rem;
+    }
+
+
+    .icons-container .icon {
+        grid-column: span 3;
+    }
+
+    .qr-code {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+@media (max-width: 535px){
+    footer .footer-copyright {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-copyright li:nth-child(2),
+    footer .footer-copyright li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #sidebar-active:checked~.links-container {
+        left: 50%;
+    }
+}
+
+@media (max-width: 551px) {
+    .submission-title {
+        font-size: 1.5rem;
+    }
+    #Conference-Fees-Section .card-container{
+        max-width: 400px;
+        margin: 40px;
+    }
+    .card{
+        min-width: 100%;
+
+    }
+}
+
+@media (max-width: 520px){
+    
+}
+@media (max-width: 520px) {
+   
+
+    #sidebar-active:checked~.links-container {
+        left: 40%;
+    }
+}
+
+/*Mobile Resposive*/
+@media (min-width: 320px) and (max-width: 426px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .titles-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+   
+
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .section-secondary-title {
+        font-size: 1.8rem;
+    }
+
+    section .content div>.sub-title {
+        font-size: 1.5rem;
+    }
+
+    /*nav*/
+    .open-sidebar,
+    .close-sidebar {
+        display: flex;
+    }
+
+    nav .open-sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-left: auto;
+        padding: 20px;
+        padding-left: 100%;
+
+        background-color: #1676F9;
+    }
+
+
+    #sidebar-active {
+        display: none;
+    }
+
+    #sidebar-active:checked~.links-container {
+        left: 20%;
+    }
+
+    /*X*/
+    .links-container .close-sidebar {
+        margin-right: auto;
+        padding: 20px 20px;
+    }
+
+    nav .links-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        transition: .5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        left: 100%;
+
+        width: 100%;
+        height: 100vh;
+        background-color: #1676F9;
+    }
+
+    nav .links-container a:nth-child(2) {
+        width: 0%;
+    }
+
+    nav .links-container a {
+        width: 100%;
+
+    }
+
+    .up-button {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    /*Conference Fees*/
+    .card-container,
+    #Research-Category-Section .content,
+    #Extension-Category-Section .content,
+    #Collaborating-Organizations-Section .icons-container,
+    .icons-container * {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .section-title,
+    .section-secondary-title,
+    .sub-title,
+    section .content,
+    .content>div {
+        width: 90%;
+    }
+    .section div{
+        padding: 0px;
+    }
+
+
+
+    /*card*/
+    h2 {
+        font-size: 1.5rem;
+
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .card p {
+
+        font-size: 1.2rem;
+        
+
+    }
+
+    .card * {
+        padding: 0px 10px;
+    }
+
+    .card-container{
+        width: 85%;
+        margin: 20px;
+    }
+
+    .Abstract-Submission .submission-title {
+        font-size: 1.2rem;
+    }
+
+    .qr-code {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+}
