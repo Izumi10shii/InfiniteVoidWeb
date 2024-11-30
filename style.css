@@ -1252,4 +1252,11 @@ footer li {
         max-height: 200px;
     }
 
+    .Home-Logo{
+        height: 300px;
+    }
+    .Home-Logo img{
+        width: 200px;
+    }
+
 }
