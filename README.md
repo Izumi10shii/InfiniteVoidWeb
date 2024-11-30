@@ -8,7 +8,4 @@ Project Leader: Paras, Christian David
                 - Saguinsin, Ryan <br>
                 - Sales, Harvey <br>
 
-Completion Progress: 95% <br>
-To-do List: <br>
-> Members Popup <br>
-> Responsiveness Fix
+Completion Progress: 100%
