@@ -89,56 +89,55 @@ footer {
 #URSVision-Section {
     background-image: linear-gradient(#89c2d9 1px, transparent 1px), linear-gradient(to right, #89c2d9 1px, transparent 1px);
     background-size: 69px 69px;
-    background-color: #a9d6e5;
+    background-color: #2F847C;
 }
 
 #About-Section {
     background-color: #e5e5f7;
     opacity: 1;
-    background-image: radial-gradient(#a9d6e5 2px, #e5e5f7 2px);
+    background-image: radial-gradient(rgb(114, 145, 155) 2px, #8FBC8F 2px);
     background-size: 40px 40px;
 }
 
 #Conference-Fees-Section {
-    background: 
-    radial-gradient(calc(1.28*56px + 21px/2) at left 50% bottom calc(-.8*56px),#89c2d9 calc(100% - 21px),#a9d6e5 calc(101% - 21px) 100%,#0000 101%) calc(2*56px) calc(-1*calc(1.5*56px + 21px)),
-    radial-gradient(calc(1.28*56px + 21px/2) at left 50% bottom calc(-.8*56px),#61a5c2 calc(100% - 21px),#a9d6e5 calc(101% - 21px) 100%,#0000 101%) calc(-1*56px) calc(calc(1.5*56px + 21px)/-2),
-    radial-gradient(calc(1.28*56px + 21px/2) at left 50% top    calc(-.8*56px),#61a5c2 calc(100% - 21px),#a9d6e5 calc(101% - 21px) 100%,#0000 101%) 0 calc(1.5*56px + 21px),
-    radial-gradient(calc(1.28*56px + 21px/2) at left 50% top    calc(-.8*56px),#89c2d9 calc(100% - 21px),#a9d6e5 calc(101% - 21px) 100%,#0000 101%) 56px calc(calc(1.5*56px + 21px)/ 2),
-    linear-gradient(#89c2d9 50%,#61a5c2 0);
-    background-size: calc(4*56px) calc(1.5*56px + 21px);
-
+    background-image: repeating-linear-gradient(to right, #a4caf3, #a4caf3 1px, transparent 1px, transparent);
+    background-size: 90px 90px;
+    background-color: #f2f3f4;
 }
 
 #Research-Category-Section {
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 33px, #61a5c2 33px, #61a5c2 66px);
-    background-color: #468faf;
+    background: radial-gradient(circle, transparent 20%, #7cbfbf 20%, #7cbfbf 80%, transparent 80%, transparent) 0% 0% / 180px 180px, radial-gradient(circle, transparent 20%, #7cbfbf 20%, #7cbfbf 80%, transparent 80%, transparent) 90px 90px / 180px 180px, linear-gradient(#5d5d5d 1px, transparent 1px) 0px -0.5px / 90px 90px, linear-gradient(90deg, #5d5d5d 1px, #7cbfbf 1px) -0.5px 0px / 90px 90px #7cbfbf;
+    background-size: 180px 180px, 180px 180px, 90px 90px, 90px 90px;
+    background-color: #7cbfbf;
 }
 
 #Extension-Category-Section {
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 33px, #2a6f97 33px, #2a6f97 66px);
-    background-color: #2c7da0;
+    background: radial-gradient(circle, transparent 20%, #77aebd 20%, #77aebd 80%, transparent 80%, transparent) 0% 0% / 180px 180px, radial-gradient(circle, transparent 20%, #77aebd 20%, #77aebd 80%, transparent 80%, transparent) 90px 90px / 180px 180px, linear-gradient(#5d5d5d 1px, transparent 1px) 0px -0.5px / 90px 90px, linear-gradient(90deg, #5d5d5d 1px, #77aebd 1px) -0.5px 0px / 90px 90px #77aebd;
+    background-size: 180px 180px, 180px 180px, 90px 90px, 90px 90px;
+    background-color: #77aebd;
 }
 
 #E-Poster-Section {
     background:
-    radial-gradient(27% 29% at right, #0000 83%,#013a63 85% 99%,#0000 101%) calc(33px/2) 33px,
-    radial-gradient(27% 29% at left, #0000 83%,#013a63 85% 99%,#0000 101%) calc(33px/-2) 33px,
-    radial-gradient(29% 27% at top, #0000 83%,#013a63 85% 99%,#0000 101%) 0 calc(33px/2),
-    radial-gradient(29% 27% at bottom, #0000 83%,#013a63 85% 99%,#0000 101%) 0 calc(33px/-2)
-    #012a4a;
-    background-size: 66px 66px;
+    radial-gradient(circle farthest-side at 0% 50%,#2b556b 23.5%,#0000 0)58.8px 84px,
+    radial-gradient(circle farthest-side at 0% 50%,#215a76 24%,#0000 0)53.2px 84px,
+    linear-gradient(#2b556b 14%,#0000 0, #0000 85%,#2b556b 0)0 0,
+    linear-gradient(150deg,#2b556b 24%,#215a76 0,#215a76 26%,#0000 0,#0000 74%,#215a76 0,#215a76 76%,#2b556b 0)0 0,
+    linear-gradient(30deg,#2b556b 24%,#215a76 0,#215a76 26%,#0000 0,#0000 74%,#215a76 0,#215a76 76%,#2b556b 0)0 0,
+    linear-gradient(90deg,#215a76 2%,#2b556b 0,#2b556b 98%,#215a76 0%)0 0 #2b556b;
+background-size: 112px 168px;
+background-color: #2b556b;
 
 }
 
 #Collaborating-Organizations-Section {
-    background: linear-gradient(135deg, #014f86 25%, transparent 25%) -33px 0/ 66px 66px, linear-gradient(225deg, rgba(1,79,134,0.5) 25%, transparent 25%) -33px 0/ 66px 66px, linear-gradient(315deg, #014f86 25%, transparent 25%) 0 0/ 66px 66px, linear-gradient(45deg, rgba(1,79,134,0.5) 25%, #01497c 25%) 0 0/ 66px 66px;
-    background-color: #01497c;
-    
+    background: linear-gradient(135deg, #5588a6 25%, transparent 25%) -56px 0, linear-gradient(225deg, #5588a6 25%, transparent 25%) -56px 0, linear-gradient(315deg, #5588a6 25%, transparent 25%), linear-gradient(45deg, #5588a6 25%, transparent 25%);
+    background-size: 112px 112px;
+    background-color: #537e97;
 }
 
 footer {
-    background-color: #033fad;
+    background-color: #09265c;
 }
 
 
@@ -146,6 +145,7 @@ footer {
 .section-title {
     font-size: 3rem;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .sub-title {
@@ -168,9 +168,11 @@ h3 {
 }
 
 .title-vision {
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    color: rgb(240, 255, 220);
 }
 
 .content-vision {
@@ -178,26 +180,43 @@ h3 {
     font: 3rem;
 }
 
+.content-mission p, .content-vision p, .corevalues-content li, .qualitypolicy-content p {
+    font-size: 30px;
+}
+
+
 .title-mission {
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    color: rgb(240, 255, 220);
 }
 
 .content-mission {
     text-align: center;
-    font: 3rem;
+    font-size: 3rem;
 }
 
 .core-values {
+    font-weight: bold;
+    color: rgb(240, 255, 220);
     text-align: center;
-    font: 3rem;
+    font: 4rem;
     text-transform: uppercase;
 }
 
 .corevalues-content {
     text-align: center;
-    font: 3rem;
+    font-size: 20px;
+}
+
+.qualitypolicy {
+    text-align: center;
+    font: 4rem;
+    font-weight: bold;
+    color: rgb(240, 255, 220);
+    text-transform: uppercase;
 }
 
 /*Nav bar*/
@@ -232,7 +251,7 @@ nav .links-container {
     align-items: center;
     padding: 0px 40px;
 
-    background: #1676F9;
+    background-color: #0b4597;
     border-bottom:solid 1px white;
     /*
     backdrop-filter: blur(20px);
@@ -249,6 +268,10 @@ nav .links-container a:nth-child(2) {
     transform: scale(1.5);
 }
 
+nav .links-container img {
+    width: 40px;
+}
+
 nav .links-container a:nth-child(2):hover {
     background-color: transparent;
 }
@@ -263,7 +286,8 @@ nav .links-container a {
 }
 
 nav a:hover {
-    background-color: #033fad;
+    background-color: #02225e;
+    color: rgb(69, 223, 171);
 }
 
 .up-button {
@@ -372,6 +396,13 @@ label{
     color: white;
 }
 
+.urslogo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
 .title-mission {
     padding-top: 50px;
 }
@@ -386,6 +417,34 @@ label{
     margin: 16px;
 }
 
+.content-vision {
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-mission {
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: center;
+    text-align: center;
+}
+
+.qualitypolicy {
+    margin: 16px;
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+.qualitypolicy-content {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
 /*About*/
 #About-Section {
     display: flex;
@@ -393,15 +452,22 @@ label{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    color: #212421;
 }
 
 #About-Section .content {
     text-align: justify;
 }
 
+#About-Section .section-title {
+    font-weight: bold;
+    color: #425542;
+}
+
 #About-Section .content,
 #About-Section .sub-title {
     margin: 0px 5%;
+    background-color: rgba(179, 179, 179, 0.178);
 
 }
 
@@ -466,7 +532,8 @@ label{
 }
 
 #Conference-Fees-Section .section-title {
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 /*Research Category*/
@@ -491,6 +558,8 @@ label{
     display: grid;
     align-items: start;
     margin: 60px 100px;
+    background-color: rgba(0, 0, 0, 0.116);
+    border-radius: 20px;
 }
 
 #Research-Category-Section .content>div {
@@ -530,6 +599,8 @@ label{
     justify-content: center;
     align-items: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.116);
+    border-radius: 20px;
 }
 
 .titles-div {
@@ -614,6 +685,8 @@ label{
 }
 
 #Collaborating-Organizations-Section .section-title {
+    font-weight: bold;
+    color: rgb(168, 250, 250);
 }
 
 .icons-container {
@@ -695,6 +768,8 @@ label{
 
 #E-Poster-Section .content {
     margin: 20px 200px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.034);
 }
 
 #E-Poster-Section .titles-div {
@@ -820,7 +895,7 @@ footer li {
 .footer-nav a li:hover,
 .footer-nav a:hover {
     transform: translateY(-5px);
-    color: black;
+    color: rgb(69, 223, 171);
 }
 
 
@@ -873,7 +948,7 @@ footer li {
         padding: 20px;
         padding-left: 100%;
 
-        background-color: #1676F9;
+        background-color: #071a3f;
         box-shadow: -5px 0 5px rgba(0,0,0,0.25);
     }
 
@@ -939,11 +1014,19 @@ footer li {
     .last-two-icons {
         grid-column: span 2;
     }
+
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
+    }
 }
 
 @media (max-width:1076px) {
     .footer-nav li {
         font-size: 1rem;
+    }
+
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
     }
 }
 
@@ -951,6 +1034,10 @@ footer li {
     .footer-nav li {
 
         padding: 10px;
+    }
+
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
     }
 }
 
@@ -963,6 +1050,10 @@ footer li {
         left: 70%;
     }
 
+
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -976,11 +1067,19 @@ footer li {
         left: 70%;
     }
 
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
+    }
+
 }
 
 @media (max-width: 800px) {
     #sidebar-active:checked~.links-container {
         left: 60%;
+    }
+
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
     }
 }
 
@@ -988,6 +1087,10 @@ footer li {
     .qr-code {
         max-width: 400px;
         height: 400px;
+    }
+
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
     }
 }
 
@@ -1005,6 +1108,10 @@ footer li {
     .qr-code {
         max-width: 300px;
         max-height: 300px;
+    }
+
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
     }
 }
 
@@ -1025,6 +1132,10 @@ footer li {
         height: 100%;
     }
 
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -1032,6 +1143,9 @@ footer li {
         left: 50%;
     }
 
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
+    }
 }
 
 @media (max-width: 551px) {
@@ -1049,7 +1163,9 @@ footer li {
 
     }
 
-
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 20px 20px 20px 20px;
+    }
 
 }
 
@@ -1057,6 +1173,80 @@ footer li {
 @media (max-width: 520px) {
     #sidebar-active:checked~.links-container {
         left: 40%;
+    }
+
+    .content-mission p, .content-vision p, .corevalues-content li, .qualitypolicy-content p {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .urslogo {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        size: 50px;
+    }
+
+    .urslogo img {
+        width: 200px;
+    }
+    
+    .title-mission {
+        padding-top: 50px;
+        font-size: 50px;
+    }
+
+    .title-vision, .core-values, .qualitypolicy {
+        font-size: 50px;
+    }
+    
+    .corevalues-content li{
+        list-style-type: none;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .urssection {
+        border-color: solid 2px black;
+    }
+    
+    .content-vision {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .content-mission {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .qualitypolicy {
+        margin: 16px;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    
+    .qualitypolicy-content {
+        display: flex;
+        margin: auto;
+        padding-bottom: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #Research-Category-Section .content, #Extension-Category-Section .content {
+        padding: 15px 15px 15px 15px;
     }
 }
 
@@ -1093,6 +1283,84 @@ footer li {
         font-size: 1.5rem;
     }
 
+    .content-mission p, .content-vision p, .corevalues-content li, .qualitypolicy-content p {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .urslogo {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        size: 50px;
+    }
+
+    .urslogo img {
+        width: 200px;
+    }
+    
+    .title-mission {
+        padding-top: 50px;
+        font-size: 50px;
+    }
+
+    .title-vision, .core-values, .qualitypolicy {
+        font-size: 50px;
+    }
+    
+    .corevalues-content li{
+        list-style-type: none;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .urssection {
+        border-color: solid 2px black;
+    }
+    
+    .content-vision {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .content-mission {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .qualitypolicy {
+        margin: 16px;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    
+    .qualitypolicy-content {
+        display: flex;
+        margin: auto;
+        padding-bottom: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titles-div {
+        padding-bottom: 20px;
+    }
+
+    #Collaborating-Organizations-Section .section-title {
+        padding-bottom: 40px;
+    }
+
     /*nav*/
     .open-sidebar,
     .close-sidebar {
@@ -1107,7 +1375,8 @@ footer li {
         padding: 20px;
         padding-left: 100%;
 
-        background-color: #1676F9;
+        background-color: #09265c;
+        border-bottom: transparent;
     }
 
 
@@ -1142,7 +1411,7 @@ footer li {
 
         width: 100%;
         height: 100vh;
-        background-color: #1676F9;
+        background-color: #09265c;
     }
 
     nav .links-container a:nth-child(2) {
