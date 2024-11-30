@@ -766,6 +766,10 @@ footer li {
     border-radius: 20px;
     border: 5px solid white;
     gap: 5px;
+
+    margin: auto;
+
+
     animation: popup .2s ease-in-out forwards;
 }
 @keyframes popup {
@@ -1221,7 +1225,7 @@ footer li {
         gap: 30px;
     }
     .Members-List{
-        
         padding: 5px;
     }
+    
 }
