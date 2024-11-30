@@ -322,34 +322,28 @@ nav a:hover {
     align-items: center;
     background-image: linear-gradient(#1676f9, #8c00ff);
     margin-top: 60px;
-}
 
+}
 video {
-    max-width: fit-content;
     top: 0;
     left: 0;
+
+
     width: 100%;
     height: 100%;
-    z-index: 2;
     opacity: .5;
 }
-
-
 .Home-Logo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    z-index: 4;
+    width: 100%;
 }
-.Home-Logo img {
-    width: 800px;
+
+.Home-Logo img{
+    position: absolute;
+    width: 80%;
 }
 
 
@@ -857,13 +851,6 @@ footer li {
     .footer-nav li {
         padding: 10px;
     }
-
-    .Home-Logo{
-        height: 600px;
-    }
-    .Home-Logo img{
-        width: 600px;
-    }
 }
 
 @media (max-width: 1184px) {
@@ -984,23 +971,12 @@ footer li {
     #sidebar-active:checked~.links-container {
         left: 70%;
     }
-    .Home-Logo{
-        height: 600px;
-    }
-    .Home-Logo img{
-        width: 600px;
-    }
+
 }
 
 @media (max-width: 800px) {
     #sidebar-active:checked~.links-container {
         left: 60%;
-    }
-    .Home-Logo{
-        height: 500px;
-    }
-    .Home-Logo img{
-        width: 400px;
     }
 }
 
@@ -1028,6 +1004,7 @@ footer li {
     }
 }
 
+
 @media (max-width: 535px) {
     footer .footer-copyright {
         flex-direction: column;
@@ -1039,12 +1016,6 @@ footer li {
         display: none;
     }
 
-    .Home-Logo{
-        height: 400px;
-    }
-    .Home-Logo img{
-        width: 300px;
-    }
 
     .bgvid {
         height: 100%;
@@ -1056,6 +1027,7 @@ footer li {
     #sidebar-active:checked~.links-container {
         left: 50%;
     }
+
 }
 
 @media (max-width: 551px) {
@@ -1079,13 +1051,6 @@ footer li {
 
 
 @media (max-width: 520px) {
-
-
- 
-
-
-
-
     #sidebar-active:checked~.links-container {
         left: 40%;
     }
@@ -1252,20 +1217,4 @@ footer li {
         max-height: 200px;
     }
 
-    .Home-Logo{
-        height: 350px;
-    }
-    .Home-Logo img{
-        width: 200px;
-    }
-
-}
-
-@media (max-width: 320px){
-    .Home-Logo{
-        height: 300px;
-    }
-    .Home-Logo img{
-        width: 200px;
-    }
 }
