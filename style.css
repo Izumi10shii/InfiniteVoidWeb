@@ -1253,10 +1253,19 @@ footer li {
     }
 
     .Home-Logo{
-        height: 300px;
+        height: 350px;
     }
     .Home-Logo img{
         width: 200px;
     }
 
+}
+
+@media (max-width: 320px){
+    .Home-Logo{
+        height: 300px;
+    }
+    .Home-Logo img{
+        width: 200px;
+    }
 }
