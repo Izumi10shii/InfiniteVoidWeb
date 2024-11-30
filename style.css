@@ -1217,4 +1217,11 @@ footer li {
         max-height: 200px;
     }
 
+    .footer-social-links{
+        gap: 30px;
+    }
+    .Members-List{
+        
+        padding: 5px;
+    }
 }
