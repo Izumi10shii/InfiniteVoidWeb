@@ -320,38 +320,42 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1676F9;
+    background-image: linear-gradient(#1676f9, #8c00ff);
+    margin-top: 60px;
 }
 
-.bgcontainer {
+video {
+    max-width: fit-content;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.bgvid {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    opacity: 0.5;
-}
-
-.homepagecontent {
+    height: 100%;
     z-index: 2;
+    opacity: .5;
 }
 
-.homepagecontent img {
+
+.Home-Logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 4;
+}
+.Home-Logo img {
     width: 800px;
 }
 
-.overlay {
-    border-image: linear-gradient(hsl(240 100% 20% / .6), hsl(0 100% 20% / .6)) fill 1;
-}
 
+label{
+    cursor: pointer;
+}
 
 /* pasabi kung ililipat ko tong media */
 @media (min-aspect-ratio:16/9) {
@@ -457,7 +461,7 @@ nav a:hover {
 }
 
 .card:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-image: linear-gradient(180deg, #1676F9, #8c00ff);
     border: 5px solid white;
     cursor: pointer;
@@ -796,6 +800,7 @@ footer li {
     width: 25px;
     height: 25px;
     transition: .5s ease-in-out;
+    cursor: pointer;
 }
 
 .footer-nav li {
@@ -851,6 +856,13 @@ footer li {
 @media (max-width: 1296px) {
     .footer-nav li {
         padding: 10px;
+    }
+
+    .Home-Logo{
+        height: 600px;
+    }
+    .Home-Logo img{
+        width: 600px;
     }
 }
 
@@ -972,11 +984,23 @@ footer li {
     #sidebar-active:checked~.links-container {
         left: 70%;
     }
+    .Home-Logo{
+        height: 600px;
+    }
+    .Home-Logo img{
+        width: 600px;
+    }
 }
 
 @media (max-width: 800px) {
     #sidebar-active:checked~.links-container {
         left: 60%;
+    }
+    .Home-Logo{
+        height: 500px;
+    }
+    .Home-Logo img{
+        width: 400px;
     }
 }
 
@@ -1015,8 +1039,10 @@ footer li {
         display: none;
     }
 
-
-    .homepagecontent img {
+    .Home-Logo{
+        height: 400px;
+    }
+    .Home-Logo img{
         width: 300px;
     }
 
@@ -1048,13 +1074,6 @@ footer li {
     }
 
 
-    .homepagecontent img {
-        width: 300px;
-    }
-
-    .bgvid {
-        height: 100%;
-    }
 
 }
 
@@ -1062,13 +1081,9 @@ footer li {
 @media (max-width: 520px) {
 
 
-    .homepagecontent img {
-        width: 300px;
-    }
+ 
 
-    .bgvid {
-        height: 100%;
-    }
+
 
 
     #sidebar-active:checked~.links-container {
@@ -1095,17 +1110,6 @@ footer li {
         align-items: center;
         justify-content: center;
     }
-
-    .homepagecontent img {
-        width: 300px;
-    }
-
-    .bgvid {
-        width: 100%;
-        height: 100%;
-        background-size: contain;
-    }
-
 
     .section-title {
         font-size: 2rem;
