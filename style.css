@@ -268,8 +268,12 @@ nav .links-container a:nth-child(2) {
     transform: scale(1.5);
 }
 
-nav .links-container img {
-    width: 40px;
+.links-container a img.navbarlogo {
+    width: auto; /* Maintain image proportions */
+    height: 40px; /* Adjust image size to fit container */
+    position: absolute; /* Allows positioning inside the container */
+    top: 0; /* Adjust to crop from top */
+    left: -10px; /* Adjust to crop from left */
 }
 
 nav .links-container a:nth-child(2):hover {
@@ -932,7 +936,11 @@ footer li {
     }
 
     .links-container a img.navbarlogo {
-        width: 150px;
+        width: auto;
+        height: 40px;
+        position: absolute;
+        top: 0px;
+        left: -10px; 
     }
 
     nav .open-sidebar {
@@ -959,6 +967,9 @@ footer li {
 
     .links-container a img.navbarlogo {
         width: 150px;
+        height: auto;
+        position: relative;
+        left: 5px;
     }
 
     nav .open-sidebar {
@@ -1053,6 +1064,7 @@ footer li {
     #Research-Category-Section .content, #Extension-Category-Section .content {
         padding: 20px 20px 20px 20px;
     }
+    
 }
 
 @media (max-width: 1153px) {
